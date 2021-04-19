@@ -1,9 +1,9 @@
 from os import listdir
 from os.path import isfile, join
 import os
-mypath = "C:/Users/vutri/OneDrive/Pictures/test/labels"
+mypath = "C:/Users/vutri/OneDrive/Pictures/datadkkdnew/valid/labels"
 
-mypath1 = "C:/Users/vutri/OneDrive/Pictures/test/images"
+mypath1 = "C:/Users/vutri/OneDrive/Pictures/datadkkdnew/valid/images"
 onlyfiles = [f.split(".")[0] for f in listdir(mypath) if os.path.getsize(join(mypath, f))!=0]
 print(len(onlyfiles))
 for f in listdir(mypath1):
